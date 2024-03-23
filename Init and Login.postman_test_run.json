@@ -1,0 +1,139 @@
+{
+	"id": "c6be3e69-8285-463f-acd7-b7120c976b75",
+	"name": "Init and Login",
+	"timestamp": "2024-03-23T10:56:40.658Z",
+	"collection_id": "28107298-bee62f35-4d71-4032-a84d-c585af0955a4",
+	"folder_id": 0,
+	"environment_id": "28107298-0094b57e-7ffe-447e-a142-69efb48a0d7f",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-23T10:56:38.295Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "61eb962a-be94-49a5-91bf-de1799c24690",
+			"name": "Init Copy",
+			"url": "https://api-prod.hezzl.com/gw/v1/game/145602/init",
+			"time": 830,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body data": true,
+				"Body data2": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body data": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body data2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				830
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body data": true,
+					"Body data2": true
+				}
+			]
+		},
+		{
+			"id": "2b3e5138-40ea-472b-be2a-c7a407bf8f25",
+			"name": "CheckLogin Copy",
+			"url": "https://api-prod.hezzl.com/auth/v1/game/145602/check-login",
+			"time": 291,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				291
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "4ec598d0-5361-4fc8-8b13-3f2280a24d8d",
+			"name": "ConfirmCode Copy",
+			"url": "https://api-prod.hezzl.com/auth/v1/game/145602/confirm-code",
+			"time": 299,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				299
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1420,
+	"collection": {
+		"requests": [
+			{
+				"id": "61eb962a-be94-49a5-91bf-de1799c24690",
+				"method": "POST"
+			},
+			{
+				"id": "2b3e5138-40ea-472b-be2a-c7a407bf8f25",
+				"method": "POST"
+			},
+			{
+				"id": "4ec598d0-5361-4fc8-8b13-3f2280a24d8d",
+				"method": "POST"
+			}
+		]
+	}
+}
